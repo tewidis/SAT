@@ -273,7 +273,7 @@ been computed, and not later modified, on all paths to the program point
 
 ## Live Variables Analysis
 
-1. Goal: Determine for each program point which variabels could be live at the
+1. Goal: Determine for each program point which variables could be live at the
 point's exit
     * A variable is live if there is a path to a use of the variable that
     doesn't redefine the variable
@@ -302,28 +302,28 @@ of these boxes
 
 1. RDA
     * OUT[n] = (IN[n] - KILL[n]) union GEN[n]
-    * IN[n] = union(OUT[n']
+    * IN[n] = union(OUT[n'])
     * n' = predecessors(n)
 
 ## Very Busy Expression Analysis
 
 1. VBEA
     * IN[n] = (OUT[n] - KILL[n]) union GEN[n]
-    * OUT[n] = intersect(IN[n']
+    * OUT[n] = intersect(IN[n'])
     * n' = successors(n)
 
 ## Available Expressions Analysis 3
 
 1. AEA
     * OUT[n] = (IN[n] - KILL[n]) union GEN[n]
-    * IN[n] = intersect(OUT[n']
+    * IN[n] = intersect(OUT[n'])
     * n' = predecessors(n)
 
 ## Live Variables Analysis 3
 
 1. LVA
     * IN[n] = (OUT[n] - KILL[n]) union GEN[n]
-    * OUT[n] = union(IN[n']
+    * OUT[n] = union(IN[n'])
     * n' = successors(n)
 
 ## Classifying Dataflow Analyses
