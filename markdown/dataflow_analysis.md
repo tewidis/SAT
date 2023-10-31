@@ -341,7 +341,7 @@ of these boxes
 2. Reasoning about flow of data using control-flow graphs
 3. Specifying dataflow analyses using local rules
 4. Chaotic iteration algorithm to compute global properties
-5. Flour classical dataflow analyses
+5. Four classical dataflow analyses
     * Reaching Definitions Analysis
     * Available Expressions Analysis
     * Very Busy Expressions Analysis
